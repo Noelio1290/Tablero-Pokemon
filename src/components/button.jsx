@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const Button = () => {
   const [count, setCount] = useState(0);
+  console.log('im re rendering tha button')
 
   const handleClick = () => {
     console.log(`Button clicked ${count + 1} times`);
