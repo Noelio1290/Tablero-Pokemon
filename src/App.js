@@ -2,6 +2,7 @@ import './App.css';
 import Button from './components/Button';
 import Legend from './components/Legend';
 import Contenedor from './components/Contenedor';
+import { useState } from 'react';
 
 const pokems = [
   { 
@@ -52,17 +53,22 @@ const pokems = [
 ];
 
 function App() {
+  let [ legendText, setLegendText ] = useState('Selecciona un pokemon')
+  const legendSetter = pokename =>{
+    setLegendText(pokename ? `${pokename} yo te elijo` : 'Selecciona un pokemon')
+  }
+
   return (
     <div className="App">
       <div className='leyenda'>
-        <Legend/>
+        <Legend legend={legendText} />
       </div>
-      <div className='pokemonANDbutton'>
+      <div className='pokemon-button'>
         <div className='contenedor'>
-          <Contenedor pokemons = {pokems}/>
+          <Contenedor legendSetter={legendSetter} pokemons = {pokems}/>
         </div>
         <div className='button'>
-          <Button/>
+          <Button legendSetter={legendSetter}/>
         </div>
       </div>
       

@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Button = () => {
-  const [count, setCount] = useState(0);
+const Button = ({legendSetter}) => {
   console.log('im re rendering tha button')
 
   const handleClick = () => {
-    console.log(`Button clicked ${count + 1} times`);
-    setCount(count + 1);
+    legendSetter();
   };
 
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Legend(props) {
+function Legend({ legend }) {
   return (
     <div>
-      <p>'{props.name} Yo te elijo'</p>
+      <p>{legend}</p>
     </div>
   );
 }
