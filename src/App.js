@@ -19,34 +19,34 @@ const pokems = [
     name:'Venusaur',
     img:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
   },{
-    id:3,
-    name:'Venusaur',
-    img:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+    id:4,
+    name:'Charmander',
+    img:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
   },
   {
-    id:3,
-    name:'Venusaur',
-    img:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+    id:5,
+    name:'Charmeleon',
+    img:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
   },
   {
-    id:3,
-    name:'Venusaur',
-    img:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+    id:6,
+    name:'Charizard',
+    img:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
   },
   {
-    id:3,
-    name:'Venusaur',
-    img:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+    id:7,
+    name:'Squirtle',
+    img:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
   },
   {
-    id:3,
-    name:'Venusaur',
-    img:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+    id:8,
+    name:'Wartortle',
+    img:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
   },
   {
-    id:3,
-    name:'Venusaur',
-    img:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+    id:9,
+    name:'Blastoise',
+    img:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
   },
 
 ];
