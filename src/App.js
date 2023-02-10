@@ -52,10 +52,29 @@ const pokems = [
 
 ];
 
+const api = "https://pokeapi.co/api/v2/pokemon"
+
 function App() {
   let [ legendText, setLegendText ] = useState('Selecciona un pokemon')
   const legendSetter = pokename =>{
     setLegendText(pokename ? `${pokename} yo te elijo` : 'Selecciona un pokemon')
+  };
+
+  const getPokemon = async () => {
+    const payload = await fetch(`${api}`)
+    const dataPokemon = await payload.json()
+    const listPokemon = []
+    console.log(dataPokemon.results)
+    for(const pokemon of dataPokemon.results){
+      console.log(pokemon)
+      const datosPokemon = {
+        id:pokemon.id,
+        name:pokemon.name,
+        img:pokemon.sprites.front_default
+    }
+    listPokemon.push(datosPokemon)
+    }
+    return listPokemon
   }
 
   return (
@@ -65,7 +84,7 @@ function App() {
       </div>
       <div className='pokemon-button'>
         <div className='contenedor'>
-          <Contenedor legendSetter={legendSetter} pokemons = {pokems}/>
+          <Contenedor legendSetter={legendSetter} pokemons = {getPokemon()}/>
         </div>
         <div className='button'>
           <Button legendSetter={legendSetter}/>
